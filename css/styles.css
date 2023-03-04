@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
@@ -14,6 +24,8 @@
 }
 
 body {
+    margin: 0;
+
     background-color: var(--primary-bc-color);
     color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
@@ -23,8 +35,19 @@ body {
     letter-spacing: 0.02em;
 }
 
+h1,h2,h3, p, ul {
+    padding: 0;
+    margin: 0;
+}
+
 .list {
     list-style: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px; 
 }
 
 /* logo */
@@ -97,14 +120,19 @@ body {
     color: var(--active-color);
 }
 
+
 /* hero */
 
 .hero {
+    width: 1440px;
+
     background-color: var(--hero-bg-color);
     text-align: center;
 }
 
 .hero-title {
+    margin-bottom:  40px;
+
     color: var(--accent-color);
     font-weight: 700;
     font-size: 56px;
@@ -122,6 +150,8 @@ body {
 }
 
 .section-title {
+    margin-bottom: 72px;
+
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -129,6 +159,8 @@ body {
 }
 
 .section-tatle-next {
+    margin-bottom: 8px;
+
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 20px;
@@ -136,7 +168,13 @@ body {
 }
 
 .featyre-lists {
+    margin-bottom: 120px;
     color: var(--primary-text-color)
+}
+
+.featyre-img {
+    display: inline-block;
+    margin-bottom: 32px;
 }
 
 .cards {
@@ -146,8 +184,15 @@ body {
 /* button */
 
 .hero-button {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    min-width: 169px;
+    margin-bottom: 188px;
+
     color: var(--accent-color);
     background-color: var(--title-bg-color);
+   
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -157,14 +202,22 @@ body {
     cursor: pointer;  
 }
 
+
 .hero-button:hover,
 .hero-button:focus {
     background-color: var(--button-bcg-color);
 }
 
 .button-menu {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    min-width: 69px;
+    border: 1px solid #E7E9FC;
+
     color: var(--logo-color);
     background-color: var(--button-bg-color);
+   
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
