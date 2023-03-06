@@ -1,12 +1,4 @@
-html {
-    box-sizing: border-box;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 :root {
     --primary-text-color: #434455;
@@ -24,7 +16,6 @@ html {
 }
 
 body {
-    margin: 0;
 
     background-color: var(--primary-bc-color);
     color: var(--primary-text-color);
@@ -35,19 +26,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-h1,h2,h3, p, ul {
-    padding: 0;
-    margin: 0;
-}
-
 .list {
     list-style: none;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1158px; 
 }
 
 /* logo */
@@ -124,19 +104,19 @@ h1,h2,h3, p, ul {
 /* hero */
 
 .hero {
-    width: 1440px;
 
     background-color: var(--hero-bg-color);
     text-align: center;
 }
 
 .hero-title {
-    margin-bottom:  40px;
+    
 
     color: var(--accent-color);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
+    text-align: center;
 }
 
 /* section */
@@ -145,12 +125,12 @@ h1,h2,h3, p, ul {
     visibility: hidden;
 }
 
+
 .section-worker {
     background-color: var(--button-bg-color);
 }
 
 .section-title {
-    margin-bottom: 72px;
 
     color: var(--title-text-color);
     font-weight: 700;
@@ -159,23 +139,18 @@ h1,h2,h3, p, ul {
 }
 
 .section-tatle-next {
-    margin-bottom: 8px;
-
+   
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2; 
 }
 
+
 .featyre-lists {
-    margin-bottom: 120px;
     color: var(--primary-text-color)
 }
 
-.featyre-img {
-    display: inline-block;
-    margin-bottom: 32px;
-}
 
 .cards {
     text-decoration: none;
@@ -184,11 +159,6 @@ h1,h2,h3, p, ul {
 /* button */
 
 .hero-button {
-    display: inline-block;
-    padding: 16px 32px;
-    border-radius: 4px;
-    min-width: 169px;
-    margin-bottom: 188px;
 
     color: var(--accent-color);
     background-color: var(--title-bg-color);
@@ -209,11 +179,6 @@ h1,h2,h3, p, ul {
 }
 
 .button-menu {
-    display: inline-block;
-    padding: 12px 24px;
-    border-radius: 4px;
-    min-width: 69px;
-    border: 1px solid #E7E9FC;
 
     color: var(--logo-color);
     background-color: var(--button-bg-color);
@@ -236,6 +201,7 @@ h1,h2,h3, p, ul {
 /* footer */
 
 .footer {
+
     background-color: var(--hero-bg-color);
 }
 
